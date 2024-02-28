@@ -1,0 +1,139 @@
+@font-face {
+    font-family: tt-autonomous-mono;
+    src: url(TT\ Autonomous\ Mono\ Trial\ Regular.ttf);
+}
+
+@font-face {
+    font-family: tt-autonomous-mono-bold;
+    src: url(TT\ Autonomous\ Mono\ Trial\ Bold.ttf);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+#page-titulo {
+    border-bottom: solid 3px #5E17EB;
+    font-family: tt-autonomous-mono, monospace;
+}
+
+#theme-btn {
+    transition: all 1s;
+}
+
+.txt-emphasis {
+    color: #5E17EB;
+}
+
+#header a {
+    text-decoration: none;
+}
+
+#header a:hover {
+    border-bottom: solid 3px #5E17EB;
+}
+
+#inicio h1 {
+    font-family: tt-autonomous-mono-bold, monospace;
+}
+
+#inicio button {
+    border-radius: 5px;
+    margin-right: 5px;
+    border: solid 3px #5E17EB;
+    font-family: tt-autonomous-mono, monospace;
+}
+
+#inicio button.emphasis {
+    background-color: #5E17EB;
+}
+
+#devicon {
+    filter: opacity(8%);
+}
+
+#codeimg {
+    margin: 0;
+    background: url('image/codeimg.png') no-repeat center;
+    background-size: 100%;
+    filter: opacity(50%);
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50vh;
+    right: 10vw;
+    width: 35vw;
+    height: 100%;
+    z-index: -1;
+}
+
+/* DARK MODE/DEFAULT */
+
+.default {
+    background-color: #0C0C12;
+    color: #FFFFFF;
+    transition: all 1s;
+}
+
+.default::-webkit-scrollbar {
+    width: 12px;
+}
+
+.default::-webkit-scrollbar-button {
+    background-color: #F3F3ED;
+    border: solid 3px #0C0C12;
+    border-radius: 5px;
+}
+
+.default::-webkit-scrollbar-thumb {
+    background-color: #5E17EB;
+    border: solid 3px #0C0C12;
+    border-radius: 5px;
+}
+
+.default #header a {
+    color: #FFFFFF;
+}
+
+.default #inicio button {
+    color: #F3F3ED;
+}
+
+.default #inicio button:hover {
+    border-color: #F3F3ED;
+    background-color: #F3F3ED;
+    color: #0C0C12;
+}
+
+/* LIGHT MODE */
+
+.light-mode {
+    background-color: #F3F3ED;
+    color: #000000;
+}
+
+.light-mode::-webkit-scrollbar-button {
+    background-color: #0C0C12;
+    border: solid 3px #F3F3ED;
+    border-radius: 5px;
+}
+
+.light-mode::-webkit-scrollbar-thumb {
+    background-color: #5E17EB;
+    border: solid 3px #F3F3ED;
+    border-radius: 5px;
+}
+
+.light-mode #header a {
+    color: #000000;
+}
+
+.light-mode #inicio button {
+    color: #0C0C12;
+}
+
+.light-mode #inicio button:hover {
+    border-color: #0C0C12;
+    background-color: #0C0C12;
+    color: #F3F3ED;
+}
