@@ -1,11 +1,11 @@
 @font-face {
     font-family: tt-autonomous-mono;
-    src: url(TT\ Autonomous\ Mono\ Trial\ Regular.ttf);
+    src: url(../fonts/tt-autonomous-mono-trial-regular.ttf);
 }
 
 @font-face {
     font-family: tt-autonomous-mono-bold;
-    src: url(TT\ Autonomous\ Mono\ Trial\ Bold.ttf);
+    src: url(../fonts/tt-autonomous-mono-trial-bold.ttf);
 }
 
 body {
@@ -20,6 +20,8 @@ body {
 
 #theme-btn {
     transition: all 1s;
+    margin: 0 0 0 30px;
+    font-size: 20px;
 }
 
 .txt-emphasis {
@@ -50,12 +52,14 @@ body {
 }
 
 #devicon {
+    background: url('../img/devicon.png') no-repeat center;
+    background-size: 100%;
     filter: opacity(8%);
 }
 
 #codeimg {
     margin: 0;
-    background: url('image/codeimg.png') no-repeat center;
+    background: url('../img/codeimg.png') no-repeat center;
     background-size: 100%;
     filter: opacity(50%);
     position: absolute;
@@ -136,4 +140,41 @@ body {
     border-color: #0C0C12;
     background-color: #0C0C12;
     color: #F3F3ED;
+}
+
+/* ERROR PAGE */
+
+.error-page {
+    background-color: #0C0C12;
+    color: #F3F3ED;
+}
+
+.error-page #page-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    height: 100vh;
+    padding: 0 0 25vh;
+}
+
+.error-page h1 {
+    font-family: tt-autonomous-mono, monospace;
+    font-size: 30vw;
+    position: absolute;
+    top: 40vh;
+    transform: translateY(-29vh);
+    width: 100%;
+    filter: opacity(0.2);
+    color: #5E17EB;
+    z-index: -1;
+}
+
+.error-page a {
+    text-decoration: none;
+    color: #5E17EB;
 }

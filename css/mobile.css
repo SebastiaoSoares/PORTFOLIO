@@ -15,15 +15,38 @@
     }
 
     #header ul {
-        display: none;
+        background-color: #0c0c12;
+        width: 100vw;
+        height: 90vh;
+        top: 10vh;
+        left: 100vw;
+        position: fixed;
+        display: flex;
         list-style-type: none;
-        padding: 0;
+        padding: 5vw;
         margin: 0;
+        transition: all 1s;
+        z-index: 1;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
     }
 
     #header ul li {
-        display: inline-block;
-        padding: 0 1vw;
+    margin: 10vw 0;
+    font-size: 20px;
+    }
+
+    #menu-btn {
+        transition: all 1s;
+        display: inline-flex;
+        margin: 0 0 0 30px;
+        font-size: 30px;
+    }
+
+    #btn-group-icons {
+        display: flex;
+        align-items: center;
     }
 
     #inicio {
@@ -40,11 +63,13 @@
     }
 
     #devicon {
-        z-index: -1;
         position: absolute;
-        top: 20vh;
-        height: 60vh;
-        left: -5vw;
+        top: 50vh;
+        left: 50vw;
+        transform: translate(-50%, -50%);
+        width: 90vw;
+        height: 90vw;
+        z-index: -1;
     }
 
     #codeimg {
