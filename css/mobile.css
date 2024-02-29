@@ -15,7 +15,6 @@
     }
 
     #header ul {
-        background-color: #0c0c12;
         width: 100vw;
         height: 90vh;
         top: 10vh;
@@ -23,13 +22,14 @@
         position: fixed;
         display: flex;
         list-style-type: none;
-        padding: 5vw;
+        padding: 5vw 5vw 15vw;
         margin: 0;
         transition: all 1s;
         z-index: 1;
         flex-direction: column;
         align-items: center;
         flex-wrap: wrap;
+        justify-content: space-evenly;
     }
 
     #header ul li {
@@ -49,16 +49,16 @@
         align-items: center;
     }
 
-    #inicio {
+    #home {
         width: 100%;
     }
 
-    #inicio h1 {
+    #home h1 {
         font-size: 30px;
         width: 90vw;
     }
 
-    #inicio .btn-group {
+    #home .btn-group {
         max-width: 90vw;
     }
 

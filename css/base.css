@@ -36,19 +36,20 @@ body {
     border-bottom: solid 3px #5E17EB;
 }
 
-#inicio h1 {
+#home h1 {
     font-family: tt-autonomous-mono-bold, monospace;
 }
 
-#inicio button {
+#home button {
     border-radius: 5px;
     margin-right: 5px;
     border: solid 3px #5E17EB;
     font-family: tt-autonomous-mono, monospace;
 }
 
-#inicio button.emphasis {
+#home button.emphasis {
     background-color: #5E17EB;
+    display: none;
 }
 
 #devicon {
@@ -99,14 +100,18 @@ body {
     color: #FFFFFF;
 }
 
-.default #inicio button {
+.default #home button {
     color: #F3F3ED;
 }
 
-.default #inicio button:hover {
+.default #home button:hover {
     border-color: #F3F3ED;
     background-color: #F3F3ED;
     color: #0C0C12;
+}
+
+.default #header ul {
+    background-color: #0C0C12;
 }
 
 /* LIGHT MODE */
@@ -132,14 +137,18 @@ body {
     color: #000000;
 }
 
-.light-mode #inicio button {
+.light-mode #home button {
     color: #0C0C12;
 }
 
-.light-mode #inicio button:hover {
+.light-mode #home button:hover {
     border-color: #0C0C12;
     background-color: #0C0C12;
     color: #F3F3ED;
+}
+
+.light-mode #header ul {
+    background-color: #F3F3ED;
 }
 
 /* ERROR PAGE */
