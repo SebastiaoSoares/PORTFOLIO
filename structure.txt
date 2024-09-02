@@ -1,36 +1,14 @@
-site-root/
+/project-root
+│
+├── /css
+│   ├── styles.css
+│
+├── /js
+│   ├── script.js
+│
+├── /assets
+│   ├── /fonts
+│   └── /images
 │
 ├── index.html
-│
-├── css/
-│   └── style.css
-│
-├── js/
-│   └── script.js
-│
-├── img/
-│   └── logo.png
-│
-├── fonts/
-│   └── font1.ttf
-│
-├── assets/
-│   ├── video.mp4
-│   └── audio.mp3
-│
-├── vendor/
-│   ├── bootstrap/
-│   │   ├── css/
-│   │   │   └── bootstrap.min.css
-│   │   └── js/
-│   │       └── bootstrap.min.js
-│   └── jquery/
-│       └── jquery.min.js
-│
-├── docs/
-│   └── documentation.pdf
-│
-├── errors/
-│   └── 404.html
-│
-└── license.txt
+└── README.md
